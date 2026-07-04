@@ -1,0 +1,6 @@
+Konsep: Komputer menyimpan satu angka rahasia (misal antara 1–100), lalu kamu harus menebaknya.
+
+Fitur yang harus dibuat:
+- Program kasih clue setiap kali tebakanmu salah: "Terlalu kecil!" atau "Terlalu besar!".
+- Game baru berhenti kalau tebakanmu benar.
+- Tampilkan berapa kali jumlah percobaan yang kamu butuhkan sampai berhasil menebak.
