@@ -2,9 +2,10 @@
 
 using namespace std;
 int main() {
-    int pilih, jam_masuk, jam_keluar, total_waktu, biaya, biaya_awal, total_biaya;
+    int i, pilih, jam_masuk, jam_keluar, total_waktu, biaya, biaya_awal, total_biaya;
     biaya = 3;
     biaya_awal = 5;
+    total_waktu = 0;
 
     cout << "[Kolom Pengisian Form]" << endl;
     cout << "1. Motor\n2. Mobil\nMasukkan jenis kendaraanmu: ";
@@ -30,11 +31,13 @@ int main() {
         cout << "Input tidak valid. Input angka sesuai jam" << endl;
     }
 
-    total_waktu = jam_keluar - jam_masuk;    
+    i = jam_masuk; // 23
+    while (i != jam_keluar) {
+        if (i == 24)
+            i = 0;
 
-    if (jam_keluar < jam_masuk) {
-        jam_masuk = jam_masuk / 2;
-        total_waktu = jam_keluar - jam_masuk;
+        total_waktu+=1;
+        i++;
     }
 
     if (pilih == 1) {
