@@ -3,6 +3,8 @@
 using namespace std;
 int main() {
     int pilih, jam_masuk, jam_keluar, total_waktu, biaya, biaya_awal, total_biaya;
+    biaya = 3;
+    biaya_awal = 5;
 
     cout << "[Kolom Pengisian Form]" << endl;
     cout << "1. Motor\n2. Mobil\nMasukkan jenis kendaraanmu: ";
@@ -29,17 +31,20 @@ int main() {
     }
 
     total_waktu = jam_keluar - jam_masuk;    
-    biaya_awal = 5000;
 
-    if (pilih == 1) {
-
-    } else {
-
+    if (jam_keluar < jam_masuk) {
+        jam_masuk = jam_masuk / 2;
+        total_waktu = jam_keluar - jam_masuk;
     }
 
+    if (pilih == 1) {
+        total_biaya = total_waktu * biaya;
+    } else {
+        total_biaya = biaya_awal + (total_waktu * biaya);
+    }
 
-    cout << "\n\n[Struk Pembayaran]\nTotal Waktu: " << total_waktu << "jam" << endl;
-    cout << "Total pembayaran: " << total_biaya;
+    cout << "\n[Struk Pembayaran]\nTotal Waktu: " << total_waktu << "jam" << endl;
+    cout << "Total pembayaran: Rp" << total_biaya << ".000,00";
 
     return 0;
 }
