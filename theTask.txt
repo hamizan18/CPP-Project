@@ -1,0 +1,8 @@
+    Projek ini fokus mutlak pada penggunaan variabel, input/output (cin/cout), dan percabangan (if-else).
+Konsep: Program menghitung biaya parkir berdasarkan jenis kendaraan (Motor/Mobil) dan durasi parkir.
+
+Fitur yang harus dibuat:
+> User milih jenis kendaraan (1 untuk Motor, 2 untuk Mobil).
+> User masukin jam masuk dan jam keluar (format jam 24 atau total durasi jam).
+> Hitung biayanya. Misal: Mobil Rp5.000 untuk 1 jam pertama, dan Rp3.000 untuk jam berikutnya.
+> Tampilkan total biaya di akhir.
