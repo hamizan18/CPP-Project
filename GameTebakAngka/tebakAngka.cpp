@@ -13,10 +13,9 @@ int main() {
 
     cout << "[Pilih angka dari 1 - 100]" << endl;
     
-    do {
         cout << "Sebutkan angka yang ingin kamu tebak pertama: ";
         cin >> n;
-        if (random_numb < n) {
+        if (random_numb > n) {
             cout << "terlalu kecil!" << endl 
                 << endl;
                 counter+=1;
@@ -28,7 +27,7 @@ int main() {
         counter+=1;
         }
         while (n != random_numb) {
-            if (random_numb < n) {
+            if (random_numb > n) {
                 cout << "Input angka: ";
                 cin >> n;
                 counter+=1;
@@ -41,7 +40,7 @@ int main() {
                 counter+=1;
                 cout << "terlalu besar!" << endl
                 << endl;
-            }
+            };
         }
     }
     cout << "Jumlah tebakanmu: " << counter << endl;
