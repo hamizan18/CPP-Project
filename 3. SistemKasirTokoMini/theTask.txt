@@ -1,0 +1,7 @@
+Sistem Kasir Toko Mini (Level: Menengah)
+Saatnya naik kelas dengan menerapkan Array/Vector dan Fungsi (function) agar kodemu lebih rapi dan modular.
+Konsep: Simulasi belanja di toko kelontong.
+Fitur yang harus dibuat:
+- Bikin fungsi khusus untuk menampilkan menu barang beserta harganya.
+- User bisa menginput daftar barang yang dibeli (bisa pakai array untuk menampung data).
+- Hitung total belanjaan, lalu buat input untuk jumlah uang yang dibayarkan, dan tampilkan uang kembaliannya.
