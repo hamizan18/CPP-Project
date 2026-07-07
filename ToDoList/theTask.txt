@@ -1,0 +1,7 @@
+Aplikasi Catatan Harian / To-Do List (Level: Menengah+)
+Di projek ini, kamu bakal belajar konsep penting dalam C++: Manipulasi File (ifstream dan ofstream). Tujuannya supaya data yang kamu ketik ga hilang saat program ditutup.
+Konsep: Aplikasi command-line untuk mencatat tugas harian.
+Fitur yang harus dibuat:
+- Menu: 1. Tulis Catatan Baru, 2. Lihat Semua Catatan, 3. Keluar.
+- Saat milih menu 1, teks yang diinput user bakal tersimpan ke dalam sebuah file .txt.
+- Saat milih menu 2, program bakal membaca file .txt tersebut dan menampilkannya di terminal.
