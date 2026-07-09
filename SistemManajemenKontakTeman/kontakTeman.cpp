@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 struct Kontak {
@@ -11,6 +12,7 @@ struct Kontak {
 int main() {
 
     vector<Kontak> daftarKontak;
+    Kontak user;
     string namaUser, emailUser;
     int option = 0, i, noHpUser;
 
@@ -20,15 +22,15 @@ int main() {
         cin >> option;
         if (option == 1) {
             cout << "Masukkan Nama: " << endl;
-            cin >> namaUser;
+            getline(cin, user.nama);
             cout << "Masukkan Nomor HP: " << endl;
-            cin >> noHpUser;
+            cin >> user.noHp;
             cout << "Masukkan Email: " << endl;
-            cin >> emailUser;
+            cin >> user.email;
 
-            daftarKontak.push_back(daftarKontak.nama, noHpUser, emailUser);
+            daftarKontak.push_back(user);
         } else if (option == 2) {
-            for(i;i < daftarKontak.size();i++){
+            for(i = 0;i < daftarKontak.size();i++){
                 cout << i+1 << ". " << "Nama: " << daftarKontak[i].nama << endl;
                 cout << i+1 << ". " << "Nama: " << daftarKontak[i].noHp << endl;
                 cout << i+1 << ". " << "Nama: " << daftarKontak[i].email << endl;
