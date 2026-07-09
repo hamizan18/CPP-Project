@@ -1,0 +1,7 @@
+Sistem Manajemen Kontak Teman (Level: Tantangan)
+Projek ini menggabungkan semua aspek di atas ditambah implementasi struct atau class (Object-Oriented Programming dasar).
+Konsep: Aplikasi buku telepon mini.
+Fitur yang harus dibuat:
+- Bikin struct Kontak yang isinya: Nama, Nomor HP, dan Email.
+- Gunakan vector<Kontak> untuk menampung banyak data kontak sekaligus.
+- Fitur utama: Tambah kontak baru, lihat seluruh daftar kontak, dan cari kontak berdasarkan nama.
