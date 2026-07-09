@@ -5,7 +5,7 @@
 using namespace std;
 struct Kontak {
     string nama;
-    int noHp;
+    string noHp;
     string email;
 };
 
@@ -23,17 +23,18 @@ int main() {
         if (option == 1) {
             cout << "Masukkan Nama: ";
             getline(cin >> ws, user.nama);
-            cout << "\nMasukkan Nomor HP: ";
+            cout << "Masukkan Nomor HP: ";
             cin >> user.noHp;
-            cout << "\nMasukkan Email: ";
+            cout << "Masukkan Email: ";
             cin >> user.email;
 
             daftarKontak.push_back(user);
         } else if (option == 2) {
             for(i = 0;i < daftarKontak.size();i++){
-                cout << i+1 << ". " << "Nama: " << daftarKontak[i].nama << endl;
-                cout << i+1 << ". " << "Nama: " << daftarKontak[i].noHp << endl;
-                cout << i+1 << ". " << "Nama: " << daftarKontak[i].email << endl;
+                cout << "[" << i+1 << "]" << endl;
+                cout << "- " << "Nama: " << daftarKontak[i].nama << endl;
+                cout << "- " << "No HP: " << daftarKontak[i].noHp << endl;
+                cout << "- " << "Email: " << daftarKontak[i].email << endl << endl;
             }
         } else if (option == 3) {
 
