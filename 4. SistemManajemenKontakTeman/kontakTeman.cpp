@@ -14,7 +14,7 @@ int main() {
     vector<Kontak> daftarKontak;
     Kontak user;
     string namaUser, emailUser;
-    int option = 0, i, noHpUser;
+    int option = 0, i, noHpUser, find;
 
     
     while (option != 4) {
@@ -37,7 +37,18 @@ int main() {
                 cout << "- " << "Email: " << daftarKontak[i].email << endl << endl;
             }
         } else if (option == 3) {
+            cout << "Masukkan Nama: ";
+            getline(cin >> ws, find);
 
+            for(i = 0;i < daftarKontak.size();i++) {
+                if (find == daftarKontak[i].nama) {
+                    cout << "[" << i + 1 << "]" << endl;
+                    cout << "- " << "Nama: " << daftarKontak[i].nama << endl;
+                    cout << "- " << "No HP: " << daftarKontak[i].noHp << endl;
+                    cout << "- " << "Email: " << daftarKontak[i].email << endl << endl;
+                } else
+                    cout << "Nama Typo atau tidak ada sama sekali!" << endl;
+            }
         } else if (option == 4) {
             cout << "Thanks!";
             break;
