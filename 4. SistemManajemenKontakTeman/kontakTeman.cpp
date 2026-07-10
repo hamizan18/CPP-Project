@@ -12,7 +12,6 @@ struct Kontak {
 int main() {
 
     vector<Kontak> daftarKontak;
-    Kontak user;
     string namaUser, emailUser, find;
     int option = 0, i, noHpUser;
 
@@ -21,8 +20,9 @@ int main() {
         cout << "[Pilih opsi]\n1. Tambah Kontak\n2. Lihat Seluruh Daftar Kontak\n3. Cari Kontak Berdasarkan Nama\n4. Keluar\nPilihan: ";
         cin >> option;
         cout << cin.fail();
-        
+
         if (option == 1) {
+            Kontak user;
             cout << "Masukkan Nama: ";
             getline(cin >> ws, user.nama);
             cout << "Masukkan Nomor HP: ";
@@ -50,8 +50,8 @@ int main() {
                     cout << "- " << "Email: " << daftarKontak[i].email << endl << endl;
                     break;
                 }
-                cout << "Nama Typo atau tidak ada sama sekali!" << endl;
             }
+            cout << "Nama Typo atau tidak ada sama sekali!" << endl;
         } else if (option == 4) {
             cout << "Thanks!";
             break;
