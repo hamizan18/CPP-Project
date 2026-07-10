@@ -13,13 +13,15 @@ int main() {
 
     vector<Kontak> daftarKontak;
     Kontak user;
-    string namaUser, emailUser;
-    int option = 0, i, noHpUser, find;
+    string namaUser, emailUser, find;
+    int option = 0, i, noHpUser;
 
     
     while (option != 4) {
         cout << "[Pilih opsi]\n1. Tambah Kontak\n2. Lihat Seluruh Daftar Kontak\n3. Cari Kontak Berdasarkan Nama\n4. Keluar\nPilihan: ";
         cin >> option;
+        cout << cin.fail();
+        
         if (option == 1) {
             cout << "Masukkan Nama: ";
             getline(cin >> ws, user.nama);
@@ -46,8 +48,9 @@ int main() {
                     cout << "- " << "Nama: " << daftarKontak[i].nama << endl;
                     cout << "- " << "No HP: " << daftarKontak[i].noHp << endl;
                     cout << "- " << "Email: " << daftarKontak[i].email << endl << endl;
-                } else
-                    cout << "Nama Typo atau tidak ada sama sekali!" << endl;
+                    break;
+                }
+                cout << "Nama Typo atau tidak ada sama sekali!" << endl;
             }
         } else if (option == 4) {
             cout << "Thanks!";
