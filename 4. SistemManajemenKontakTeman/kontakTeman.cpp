@@ -12,7 +12,7 @@ struct Kontak {
 int main() {
 
     vector<Kontak> daftarKontak;
-    string namaUser, emailUser, find;
+    string find;
     int option = 0, i, noHpUser;
 
     
